@@ -1,0 +1,10 @@
+# This is how we chose what adaptors to trim in the Trimmomatic script
+
+### For each unique bioproject in the proposed samples table, the corresponding manuscript was found and its supplementary material examined. We examined their github 
+### repositories to find either 
+
+### **A.** A list of adaptors they used,
+### **B.** A list of adaptors they trimmed with their own trimming script, or
+### **C.** A reference to a previous manuscript that generated the data -- in this case, the search is repeated in the earlier manuscript.
+
+### All adaptor sequences found in this manner were added to AdaptersToTrim_All.fa, in addition to some commonly used adaptor sequences not specified in the manuscripts.
