@@ -7,4 +7,7 @@
 ### **B.** A list of adaptors they trimmed with their own trimming script, or
 ### **C.** A reference to a previous manuscript that generated the data -- in this case, the search is repeated in the earlier manuscript.
 
-### All adaptor sequences found in this manner were added to AdaptersToTrim_All.fa, in addition to some commonly used adaptor sequences not specified in the manuscripts.
+### All adaptor sequences found in this manner were added to AdaptersToTrim_All.fa.
+
+### When adaptor data was not available, we checked the methods of the earliest manuscript for the sequencing platform used, and selected adaptors commonly used by that platform
+### to add to the adaptor list.
