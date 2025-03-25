@@ -34,9 +34,9 @@ module load hisat2/2.2.0
 module load stringtie/2.2.1
 module load gcc/9.4.0
 module load python/3.10.8-zimemtc
-module load samtools
-module load bcftools
-module load gffread
+module load samtools/1.18
+module load bcftools/1.13
+module load gffread/0.12.7
 #module load gffcompare
 
 
