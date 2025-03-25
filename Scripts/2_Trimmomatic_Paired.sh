@@ -34,7 +34,7 @@
 source /apps/profiles/modules_asax.sh.dyn
 module load trimmomatic/0.39
 module load fastqc/0.10.1
-module load multiqc
+module load multiqc/1.15
 
 ## STOP. You need to replace the [number] with YOUR paths to 
 ##       make variables for your ASC ID so the directories are automatically made in YOUR directory
