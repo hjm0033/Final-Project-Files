@@ -1,0 +1,27 @@
+Run	LibraryLayout	BREED	sex	age	Size
+SRR23641214	PAIRED	Beagle	female	3	Small
+SRR23641219	PAIRED	Border Collie	female	1	Large
+SRR23641217	PAIRED	Dobermann	female	7	Large
+SRR23641211	PAIRED	Miniature Poodle	female	12	Small
+SRR23641213	PAIRED	Yorkshire Terrier	female	6	Small
+SRR8997015	PAIRED	Belgian Malanois	male	3	Large
+SRR8997035	PAIRED	Belgian Malanois	male	2	Large
+SRR3727718	PAIRED	Great Swiss Mountain Dog	missing	missing	Large
+SRR8996999	PAIRED	Newfoundland	male	11	Large
+DRR305797	PAIRED	Toy poodle			Small
+DRR305798	PAIRED	Toy poodle			Small
+SRR8996961	PAIRED	Yorkshire Terrier	male	11	Small
+SRR12899133	PAIRED	Berner sennenhund			Large
+SRR12899122	PAIRED	Bolonka Swetna			Large
+SRR12899134	PAIRED	Bolonka Swetna			Large
+SRR12899115	PAIRED	French Bulldog			Small
+SRR12899116	PAIRED	French Bulldog			Small
+SRR12899130	PAIRED	Hovawart			Large
+SRR8996997	PAIRED	Newfoundland	male	11	Large
+SRR8996959	PAIRED	Yorkshire Terrier	male	11	Small
+SRR9872854	SINGLE	Boxer	male	8	Large
+SRR9872853	SINGLE	Chesapeake Bay Retriever	female	3	Large
+SRR18300828	PAIRED	Beagle	female	3	Small
+SRR18300833	PAIRED	Border collie	female	1	Large
+SRR18300834	PAIRED	Boxer	female	1	Large
+SRR18300827	PAIRED	German shepherd dog	female	4	Large
