@@ -1,0 +1,22 @@
+## DATASET INFORMATION
+
+Total number of samples: 26 
+Total number of genes before filtering: 40478 
+Number of genes after filtering (>10 counts): 37333 
+
+## SAMPLE INFORMATION
+
+Number of small dogs: 10 
+Number of large dogs: 16 
+Males: 7 
+Females: 10 
+
+## DIFFERENTIAL EXPRESSION RESULTS
+
+Comparison: Large vs Small dogs
+Number of DEGs (padj < 0.05): 1794 
+Number of DEGs (padj < 0.1): 3638 
+Number of upregulated genes in large dogs (log2FC > 0, padj < 0.05): 227 
+Number of downregulated genes in large dogs (log2FC < 0, padj < 0.05): 1567 
+Range of log2 fold changes: [-12, 4.92] 
+
