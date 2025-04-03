@@ -1,0 +1,23 @@
+producer_class	xtools.gsea.GseaPreranked
+producer_timestamp	1743697612355
+param	rpt_label	GSEA_IIS
+param	rnd_seed	timestamp
+param	set_min	10
+param	zip_report	false
+param	create_svgs	false
+param	scoring_scheme	weighted
+param	rnk	C:\Users\kaysg\Downloads\Dog_DGErankName.rnk
+param	norm	meandiv
+param	out	E:\
+param	mode	Abs_max_of_probes
+param	include_only_symbols	true
+param	help	false
+param	set_max	500
+param	gmx	C:\Users\kaysg\AppData\Local\Temp\from_text_entry_15864713416493088531.grp
+param	make_sets	true
+param	plot_top_x	20
+param	gui	false
+param	nperm	1000
+param	collapse	No_Collapse
+
+file	E:\GSEA_IIS.GseaPreranked.1743697612355\index.html
