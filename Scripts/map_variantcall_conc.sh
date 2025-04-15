@@ -75,11 +75,14 @@ hisat2-build ${REF}.fasta IIS_CDS_index
 
 # Move to the data directory
 cd ${CD}  #### This is where our clean paired reads are located.
+#cd ${WD}
 
 ## Create list of fastq files to map.    Example file format of your cleaned reads file names: SRR629651_1_paired.fastq SRR629651_2_paired.fastq
 ## grab all fastq files, cut on the underscore, use only the first of the cuts, sort, use unique put in list
 #ls | grep ".fastq" |cut -d "_" -f 1| sort | uniq > list    #should list Example: SRR629651
+#ls ${CD} | grep -E '[^u]paired\.fastq$' | cut -d "_" -f 1 | sort | uniq > listls | grep -E '[^u]paired\.fastq$' | cut -d "_" -f 1 | sort | uniq > list
 ls | grep -E '[^u]paired\.fastq$' | cut -d "_" -f 1 | sort | uniq > list
+
 
 ## Move to the directory for mapping
 cd ${MAPD}
@@ -114,10 +117,21 @@ do
 
 ##############  Calling SNPs  #######################
    #Call SNPs
-bcftools mpileup -f ${REF}.fasta "$i"_sorted_mapOnly.bam | bcftools call -mv -Ov -o "$i"_variants.vcf
+#bcftools mpileup -f ${REF}.fasta "$i"_sorted_mapOnly.bam | bcftools call -mv -Ov -o "$i"_variants.vcf
+
+bcftools mpileup -f /scratch/aubclsd0306/PracticeRNAseq_Full_Script/Ref/IIS_CDS.fasta "$i"_sorted_mapOnly.bam | bcftools call -mv -Ov -o "$i"_variants.vcf
+
+# Compressing
+bgzip "$i"_variants.vcf 
+bcftools index "$i"_variants.vcf.gz
 
  #Generate the consensus sequence
-bcftools consensus -f ${REF}.fasta -o "$i"_IISconsensus.fasta "$i"_variants.vcf
+#bcftools consensus -f ${REF}.fasta -o "$i"_IISconsensus.fasta "$i"_variants.vcf
+
+#bcftools consensus -f /scratch/aubclsd0306/PracticeRNAseq_Full_Script/Ref/IIS_CDS.fasta -o "$i"_IISconsensus.fasta "$i"_variants.vcf
+
+bcftools consensus -f /scratch/aubclsd0306/PracticeRNAseq_Full_Script/Ref/IIS_CDS.fasta \
+  -o "$i"_IISconsensus.fasta "$i"_variants.vcf.gz
 
 done<list
 
@@ -128,3 +142,6 @@ cp *_variants.vcf ${RESULTSD}
 
 ### copy the final results files (the count matricies that are .cvs) to your home directory. 
 cp *consensus.fasta ${RESULTSD}
+
+
+
