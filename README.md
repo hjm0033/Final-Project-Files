@@ -147,10 +147,6 @@ This directory contains scripts for processing and analyzing RNA-seq data from a
 
 ## Other Files
 
-### `IIS_seq_variant.o257920`
-
-Output file from a sequencing variant analysis job, likely containing log information from a high-performance computing cluster job.
-
 ## Project Root Files
 
 Several important output files and metadata files exist in the project's root directory:
