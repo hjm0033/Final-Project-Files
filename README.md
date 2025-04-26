@@ -70,13 +70,13 @@ This directory contains scripts for processing and analyzing RNA-seq data from a
 - Time limit: 04:00:00
 - Memory: 12GB
 
-### 4. `map_variantcall_conc.sh`
+### 4. `IIS_mapping_consensus_sequence.sh`
 
 **Purpose:** Additional mapping and variant calling pipeline component.
 
 **Functionality:**
 - Extends the mapping process with additional options
-- Includes variant calling functionality
+- Includes variant calling functionality for single nucleotide polymorphism identification 
 - Sets up directory structure for variant analysis in IIS (Immune and Inflammatory System) focused analysis
 
 ## R Analysis Scripts
@@ -146,10 +146,6 @@ This directory contains scripts for processing and analyzing RNA-seq data from a
 - Outputs high-resolution PDF visualizations (`top_genes_dotplot.pdf`)
 
 ## Other Files
-
-### `IIS_seq_variant.o257920`
-
-Output file from a sequencing variant analysis job, likely containing log information from a high-performance computing cluster job.
 
 ## Project Root Files
 
